@@ -1,0 +1,17 @@
+/* body{
+    background-color: blue;
+} */
+
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
