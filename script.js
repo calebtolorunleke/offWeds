@@ -153,16 +153,45 @@
 // console.log(count())
 // console.log(count())
 
-document.getElementById('signup-btn').addEventListener('click', function(){
+// document.getElementById('signup-btn').addEventListener('click', function(){
 
+// })
+
+// function checkUsername(username, callback) {  
+//     setTimeout(()=> {
+//         console.log('checking usernmae...')
+//         callback(true)
+//     }, 2000
+// )
+// }
+
+// function saveToDatabase(userData, callback){
+//     setTimeout(()=> {
+//         console.log('saving to database...')
+//         callback(true)
+//     }, 2000
+// }
+
+let pizzaOrder = new Promise ((resolve, reject) => {
+    let pizzaReady = true;
+
+    if(pizzaOrder){
+        resolve('pizza is ready')
+    }else{
+        resolve('pizza is not ready')
+    }
 })
 
-function checkUsername(username, callback) {  
-    setTimeout(()=> {
-        console.log('checking usernmae...')
-        callback(true)
-    }, 2000
-)
-}
+pizzaOrder
+.then((message) => {
+    console.log(message)
 
-function signup
+    return'enjoy your pizza'
+})
+.then((nextMessage) => {
+    console.log('nextMessage')
+})
+
+.catch((error) => {
+    console.log('error: ' + error)
+})
